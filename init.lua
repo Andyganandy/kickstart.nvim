@@ -680,8 +680,7 @@ require('lazy').setup({
           -- You can use 'stop_after_first' to run the first available formatter from the list
           -- javascript = { "prettierd", "prettier", stop_after_first = true },
         },
-        formatters = {
-        },
+        formatters = {},
       }
     end,
     cmd = { 'ConformInfo' },
@@ -1104,8 +1103,6 @@ vim.keymap.set('n', '<leader>gg', ':Git<CR>')
 vim.keymap.set('n', '<leader>gc', ':Git commit<CR>')
 vim.keymap.set('n', '<leader>rl', ':luafile ~/.config/nvim/init.lua<CR>')
 vim.api.nvim_set_keymap('i', '<C-Space>', '<C-x><C-o>', { noremap = true, silent = true })
-vim.keymap.set('n', '<leader>cw', ':Codewise<CR>', { desc = '[c]ode[w]ise' })
-vim.keymap.set('n', '<leader>w', ':Codewise<CR>', { desc = '[c]ode[w]ise' })
 vim.keymap.set('n', '<leader>e', ':lua ToggleNvimTreeInCurrentFileDir() <CR>', { noremap = true, silent = true })
 -- vim.keymap.set('i', '<C-J>', function()
 -- end, { noremap = true, silent = true })
